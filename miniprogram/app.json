@@ -1,10 +1,11 @@
 {
   "pages": [
-    "page/tabbar/home/index",
-    "page/tabbar/mine/index",
-    "page/tabbar/task/index",
-    "page/tabbar/mall/index",
-    "page/tabbar/award/index"
+    "page/login/index",
+    "page/tabBar/home/index",
+    "page/tabBar/mine/index",
+    "page/tabBar/task/index",
+    "page/tabBar/mall/index",
+    "page/tabBar/award/index"
   ],
   "tabBar": {
     "color": "#999",
@@ -12,27 +13,27 @@
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
-      "pagePath": "page/tabbar/home/index",
+      "pagePath": "page/tabBar/home/index",
       "iconPath": "image/home.png",
       "selectedIconPath": "image/home_active.png",
       "text": "首页"
     }, {
-      "pagePath": "page/tabbar/mall/index",
+      "pagePath": "page/tabBar/mall/index",
       "iconPath": "image/mall.png",
       "selectedIconPath": "image/mall.png",
       "text": "商城"
     }, {
-      "pagePath": "page/tabbar/award/index",
+      "pagePath": "page/tabBar/award/index",
       "iconPath": "image/award.png",
       "selectedIconPath": "image/award_active.png",
       "text": "奖励"
     }, {
-      "pagePath": "page/tabbar/task/index",
+      "pagePath": "page/tabBar/task/index",
       "iconPath": "image/task.png",
       "selectedIconPath": "image/task_active.png",
       "text": "奖励"
     }, {
-      "pagePath": "page/tabbar/mine/index",
+      "pagePath": "page/tabBar/mine/index",
       "iconPath": "image/mine.png",
       "selectedIconPath": "image/mine_active.png",
       "text": "奖励"

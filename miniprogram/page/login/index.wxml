@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="head">
+    <text class="head-title">欢迎使用 小黄鱼</text>
+    <view>
+      <text class="head-desc">立即登录，享优质服务</text>
+    </view>
+  </view>
+
+  <view>
+    <!-- <view wx:if="userInfo" class="userinfo">
+      <button type="primary" wx:if="{{!userInfo.nickName && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindUserInfo"> 获取头像昵称 </button>
+      <block wx:if="{{userInfo.nickName && canIUse}}">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view> -->
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <!-- <button disabled="{{!checkPrivacy}}" wx:if="{{!userInfo.nickName && canIUse}}" style="width: 670rpx;line-height: 50px;" class="login-btn" open-type="getUserInfo" bindtap="bindUserInfo"> 微信用户获取信息 </button> -->
+
+    <button disabled="{{!checkPrivacy}}" style="width: 670rpx;line-height: 50px;" class="login-btn" open-type="getPhoneNumber" bindgetphonenumber="bindPhoneNumber"> 微信用户一键登录 </button>
+  </view>
+
+  <view class="privacy-policy">
+  <checkbox-group bindchange="checkedPrivacyEvent">
+    <checkbox value="checkPrivacy" checked="{{checkPrivacy}}"/>
+    </checkbox-group>
+    您已阅读并同意接受 <text  bindtap="gotoServePolicy" class="primary-text">《用户服务协议》</text>和 <text bindtap="gotoPrivacyPolicy" class="primary-text">《隐私协议》</text>
+  </view>
+</view>
