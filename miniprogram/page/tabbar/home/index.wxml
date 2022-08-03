@@ -1,0 +1,2 @@
+<!--page/tabbar/home/index.wxml-->
+<van-button type="default">默认ss按钮</van-button>
